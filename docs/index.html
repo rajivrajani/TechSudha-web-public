@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for the CurrEx mobile application by TechSudha." />
+  <meta name="robots" content="index, follow" />
+  <title>Privacy Policy &middot; CurrEx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #647084;
+      --accent: #2563eb;
+      --accent-soft: #e8f0fe;
+      --border: #e3e8f0;
+      --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1320;
+        --card: #161d2e;
+        --text: #e6eaf2;
+        --muted: #94a0b8;
+        --accent: #6ea8fe;
+        --accent-soft: #1d2740;
+        --border: #283150;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+    header.hero {
+      text-align: center;
+      padding: 48px 20px 36px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: clamp(28px, 5vw, 40px); margin: 0 0 8px; letter-spacing: -0.02em; }
+    .updated { color: var(--muted); font-size: 15px; margin: 0; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(24px, 5vw, 48px);
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+    }
+    .card > :first-child { margin-top: 0; }
+    .card > :last-child { margin-bottom: 0; }
+    h2 {
+      font-size: 22px;
+      margin: 40px 0 12px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      letter-spacing: -0.01em;
+    }
+    .card > h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+    h3 { font-size: 17px; margin: 24px 0 8px; color: var(--text); }
+    p { margin: 0 0 16px; }
+    ul { margin: 0 0 16px; padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      font-family: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    .intro { color: var(--muted); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <span class="badge">CurrEx</span>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 27, 2026</p>
+  </header>
+
+  <main class="wrap">
+    <article class="card">
+      <p class="intro">TechSudha ("we", "our", or "us") operates the <strong>CurrEx</strong> mobile application (the "App"). We are committed to protecting your privacy. This Privacy Policy explains how we handle information in connection with your use of the App.</p>
+      <p class="intro">By installing and using CurrEx, you agree to the collection and use of information in accordance with this policy.</p>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>A. No Personal Information Collected</h3>
+      <p>CurrEx does not collect, store, or share any personally identifiable information, such as your name, email address, physical address, phone number, location, or contact list. You can use the App completely anonymously without creating an account or registering.</p>
+
+      <h3>B. Local Storage Data</h3>
+      <p>To provide our currency tracking services, the App stores certain configuration data strictly locally on your device's storage (using React Native's <code>AsyncStorage</code> cache):</p>
+      <ul>
+        <li>Your customized currency watchlist.</li>
+        <li>Your configured price alert thresholds.</li>
+        <li>Your custom API endpoints, authorization headers, and API keys (if you choose to use your own data provider).</li>
+      </ul>
+      <p><strong>This data is never sent to our servers.</strong> It remains inside the App's secure sandboxed storage on your device and is deleted if you uninstall the App.</p>
+
+      <h3>C. Technical Feedback Logs (Optional)</h3>
+      <p>If you choose to submit feedback or report an error through the App's settings:</p>
+      <ul>
+        <li>You are given the option to compile diagnostic logs (including device model, OS version, and API connection status).</li>
+        <li>Any custom API keys are automatically masked (e.g. <code>abc...</code>) before compilation.</li>
+        <li>This log is only sent to us if you explicitly complete the email composition and send it via your default mail client.</li>
+      </ul>
+
+      <h2>2. Third-Party Services &amp; Data Collection</h2>
+      <p>To keep CurrEx free, the App displays advertisements served by <strong>Google AdMob</strong>. Google AdMob may collect and use specific identifiers from your device to personalize ads and analyze traffic.</p>
+
+      <h3>A. Data Collected by AdMob</h3>
+      <p>Google AdMob may collect:</p>
+      <ul>
+        <li>Device identifiers (such as the Google Advertising ID (AdID) on Android, or the Identifier for Advertisers (IDFA) on iOS).</li>
+        <li>IP address.</li>
+        <li>Approximate location (based on IP address).</li>
+        <li>Ad interaction events and diagnostics.</li>
+      </ul>
+
+      <h3>B. Consent &amp; Privacy Choices (GDPR / CCPA)</h3>
+      <p>We respect your privacy rights under regulations such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA):</p>
+      <ul>
+        <li><strong>Startup Consent:</strong> On your first launch, the App presents a consent dialog (using Google's official User Messaging Platform - UMP SDK). You can choose to accept, decline, or customize personalized ad tracking.</li>
+        <li><strong>Consent Revocation:</strong> You can review, modify, or withdraw your consent choices at any time by going to the App settings and clicking <strong>"Manage Ad Consent Preferences"</strong>.</li>
+        <li>For more information on how Google uses your data, please read the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy &amp; Terms Policy</a>.</li>
+      </ul>
+
+      <h2>3. Data Security</h2>
+      <p>The security of your local data is important to us. Because all watchlist details, alerts, and custom configurations are stored inside the device's sandboxed local storage, they are protected by your mobile operating system's built-in sandbox security measures.</p>
+      <p>However, please remember that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+
+      <h2>4. Children's Privacy</h2>
+      <p>CurrEx does not knowingly collect any personal data from children under the age of 13. The App is a general financial utility. If you are a parent or guardian and believe that your child has provided personal data to AdMob or us, please contact us, and we will take steps to remove that information.</p>
+
+      <h2>5. Changes to This Privacy Policy</h2>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+      <h2>6. Contact Us</h2>
+      <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:techsudha7@gmail.com">techsudha7@gmail.com</a></li>
+        <li><strong>Website:</strong> <a href="https://techsudha.com" target="_blank" rel="noopener">https://techsudha.com</a></li>
+      </ul>
+    </article>
+
+    <footer>
+      &copy; 2026 TechSudha &middot; CurrEx
+    </footer>
+  </main>
+</body>
+</html>
